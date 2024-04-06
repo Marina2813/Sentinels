@@ -30,7 +30,7 @@ To configure the project, follow these steps:
 
 1. Clone the repository:
     ```
-    git clone [https://github.com/your-username/your-repo.git](https://github.com/Marina2813/Sentinels)
+    git clone https://github.com/Marina2813/Sentinels
     ```
 
 2. Navigate to the project directory:
