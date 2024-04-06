@@ -7,12 +7,13 @@
 MyHours is a sleek and efficient note-taking application designed to streamline your task management experience. Built on the Django framework, MyHoursoffers a user-friendly interface that makes organizing your tasks a breeze.
 
 Features
+## Frontend
 
-Home Page: The heart of MyHours, the home page greets users with a clean and intuitive interface. 
+- Home Page: The heart of MyHours, the home page greets users with a clean and intuitive interface. 
 
-View Task Page: Need to review your tasks? The view task page provides a comprehensive list of all your notes, neatly categorized and displayed for easy reference, ensuring they never miss an important deadline.
+- View Task Page: Need to review your tasks? The view task page provides a comprehensive list of all your notes, neatly categorized and displayed for easy reference, ensuring they never miss an important deadline.
 
-Add Task Page: Creating new tasks is effortless with MyHours's add task page. Simply input the task details, including title, description, due date, and time, and let MyHour handle the rest. Users can also assign tasks to specific categories for better organization.
+- Add Task Page: Creating new tasks is effortless with MyHours's add task page. Simply input the task details, including title, description, due date, and time, and let MyHour handle the rest. Users can also        assign tasks to specific categories for better organization.
 
 ## Task Management Backend:
 
