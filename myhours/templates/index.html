@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Django App{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+<body class="overflow-hidden">
+    <div class="px-4 py-2 flex justify-between">
+        <h1 class="w-full font-bold text-3xl ">MyHours</h1>
+        <div>
+            <div class="w-10 mx-4 h-10 bg-gradient-to-l from-red-200 to-blue-300 rounded-full"></div>
+        </div>
+    </div>
+    <header>
+        <nav class="" >
+            <ul class="flex fixed top-[2] left-0 flex-col w-[15%] justify-evenly bg-blue-100 p-4 h-screen justify-center items-center ">
+                <li class="hover:font-bold duration-300 ease-in-out"><a href="/">Home</a></li>
+                <li class="hover:font-bold duration-300 ease-in-out"><a href="/viewtask/">viewtask</a></li>
+                <li class="hover:font-bold duration-300 ease-in-out"><a href="/addtask/">addtask</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="flex bg-red-200 ml-[15%] w-[85%] h-screen justify-center items-center p-10">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="absolute bottom-0 left-0">
+        <p>&copy; 2022 My Django App. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

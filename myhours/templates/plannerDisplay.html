@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+
+{% block title %}Planner Display{% endblock %}
+
+{% block content %}
+<div>
+    <h1 class="w-full text-center font-bold text-3xl py-5">Notes</h1>
+    <ul class="flex justify-evenly items-center">
+        {% for planner in planners %}
+        <li class="px-10">
+            <strong>Title:</strong> {{ planner.title }}<br>
+            <strong>Description:</strong> {{ planner.description }}<br>
+            <strong>Date:</strong> {{ planner.date }}<br>
+            <strong>Time:</strong> {{ planner.time }}<br>
+            <strong>Created At:</strong> {{ planner.created_at }}<br>
+            <strong>Updated At:</strong> {{ planner.updated_at }}<br>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+
+{% block title %}Add Task{% endblock %}
+
+{% block content %}
+<div>
+    <h1>Add Task</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description"></textarea><br>
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date"><br>
+        <label for="time">Time:</label><br>
+        <input type="time" id="time" name="time"><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+{% endblock %}
