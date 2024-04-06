@@ -6,6 +6,8 @@
     <title>{% block title %}My Django App{% endblock %}</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </head>
   <body class="overflow-hidden ">
     <div class="px-4 py-2 flex  justify-between border-2 shadow-xl rounded-b-xl">
@@ -50,7 +52,29 @@
 
         {% endblock %}
     </main>
-
+    <script>
+        document.querySelectorAll('.task-checkbox').forEach(function(checkbox) {
+            checkbox.addEventListener('change', function() {
+                fetch('/update-task-status/', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        task_id: this.dataset.id,
+                        new_status: this.checked ? 'complete' : 'todo'
+                    }),
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': '{{ csrf_token }}'
+                    }
+                }).then(function(response) {
+                    if (response.ok) {
+                        location.reload();
+                    } else {
+                        console.error('Failed to update task status');
+                    }
+                });
+            });
+        });
+        </script>
     
   </body>
 </html>

@@ -3,7 +3,6 @@ from django.db import models
 class Planner(models.Model):
     STATUS_CHOICES = [
         ('todo', 'Todo'),
-        ('inprogress', 'In Progress'),
         ('complete', 'Complete'),
     ]
 
