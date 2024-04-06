@@ -20,7 +20,7 @@ Add Task Page: Creating new tasks is effortless with MyHours's add task page. Si
 [link to video](Link Here)
 ## How it Works ?
 1. Explaining the working of project
-2. Embed video of project demo
+  https://github.com/Marina2813/Sentinels/assets/86565903/c14bdb79-8ac9-4431-a145-8eb7b954c78d
 ## Libraries used
 Django
 Tailwind
