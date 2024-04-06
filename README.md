@@ -16,6 +16,53 @@ Long Description about project. This project do that. This project is awesome...
 ## Libraries used
 Library Name - Version
 ## How to configure
-Instructions for setting up project
-## How to Run
-Instructions for running
+To configure the project, follow these steps:
+
+1. Clone the repository:
+    ```
+    git clone https://github.com/your-username/your-repo.git
+    ```
+
+2. Navigate to the project directory:
+    ```
+    cd your-repo
+    ```
+
+3. Create a virtual environment:
+    ```
+    python -m venv env
+    ```
+
+4. Activate the virtual environment:
+    - For Windows:
+      ```
+      .\env\Scripts\activate
+      ```
+    - For macOS/Linux:
+      ```
+      source env/bin/activate
+      ```
+
+5. Install the required dependencies:
+    ```
+    pip install -r requirements.txt
+    ```
+
+6. Set up the database:
+    ```
+    python manage.py migrate
+    ```
+
+7. Create a superuser:
+    ```
+    python manage.py createsuperuser
+    ```
+
+8. Start the development server:
+    ```
+    python manage.py runserver
+    ```
+
+9. Open your web browser and visit `http://localhost:8000` to see the project running.
+
+Note: Make sure you have Python and pip installed on your system before proceeding with the above steps.

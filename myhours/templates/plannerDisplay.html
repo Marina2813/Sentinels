@@ -4,13 +4,24 @@
 
 {% block content %}
 
-
 <div>
     <h1 class="text-3xl font-bold py-4">My Tasks</h1>
 
     <div class="task-container">
         <h2 class="text-xl font-bold">Tasks</h2>
-        {% for planner in planners %}
+        {% for planner in todo_tasks %}
+        <div class="flex items-center bg-white p-4 rounded-md shadow-md mb-4">
+            <input type="checkbox" class="mr-4">
+            <div class="flex justify-between w-full">
+                <div class="font-bold">{{ planner.title }}</div>
+                <div class="text-sm text-gray-500">{{ planner.date }}</div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="task-container">
+        <h2 class="text-xl font-bold">In Progress</h2>
+        {% for planner in inprogress_tasks %}
         <div class="flex items-center bg-white p-4 rounded-md shadow-md mb-4">
             <input type="checkbox" class="mr-4">
             <div class="flex justify-between w-full">
@@ -22,7 +33,15 @@
     </div>
     <div class="task-container">
         <h2 class="text-xl font-bold">Complete</h2>
-        <!-- Add completed tasks here -->
+        {% for planner in completed_tasks %}
+        <div class="flex items-center bg-white p-4 rounded-md shadow-md mb-4">
+            <input type="checkbox" class="mr-4" checked>
+            <div class="flex justify-between w-full">
+                <div class="font-bold">{{ planner.title }}</div>
+                <div class="text-sm text-gray-500">{{ planner.date }}</div>
+            </div>
+        </div>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}
