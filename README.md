@@ -35,8 +35,8 @@ Features
 [link to video](https://github.com/Marina2813/Sentinels/assets/86565903/c14bdb79-8ac9-4431-a145-8eb7b954c78d)
 
 ## Libraries used
-Django - 5.0.4
-Tailwind
+- Django - 5.0.4
+- Tailwind
 
 ## How to configure
 To configure the project, follow these steps:
