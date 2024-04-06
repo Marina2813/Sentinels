@@ -19,18 +19,21 @@
       </div>
     </div>
     <header>
-      <nav class="">
+      <nav class=" text-xl">
         <ul
           class="flex fixed top-[3em]  z-10 left-0 flex-col w-[15%] justify-evenly shadow-xl p-4 h-screen justify-center items-center"
         >
-          <li class="hover:font-bold duration-300 ease-in-out">
+          <li class="flex justify-center items-center hover:font-bold duration-300 ease-in-out">
+            <ion-icon name="home-outline"></ion-icon>
             <a href="/">Home</a>
           </li>
-          <li class="hover:font-bold duration-300 ease-in-out">
-            <a href="/viewtask/">viewtask</a>
+          <li class="flex justify-center items-center hover:font-bold duration-300 ease-in-out">
+            <ion-icon name="analytics-outline"></ion-icon>
+            <a href="/viewtask/">View</a>
           </li>
-          <li class="hover:font-bold duration-300 ease-in-out">
-            <a href="/addtask/">addtask</a>
+          <li class="flex justify-center items-center hover:font-bold duration-300 ease-in-out">
+            <ion-icon name="add-outline"></ion-icon>
+            <a href="/addtask/">Add</a>
           </li>
         </ul>
       </nav>
@@ -40,7 +43,7 @@
         {% block content %}
         <div class="h-full w-1/2 font-bold p-10 text-5xl flex flex-col justify-evenly  ">
             <h1>FORGET ABOUT YOUR <br><span class="font-extrabold italic text-red-500 ">MESSY</span><br> SCHEDULE</h1>
-            <a href="/login">
+            <a href="/addtask">
             <div  class="px-8 py-4 bg-red-500 rounded-full w-1/2 text-xl text-white flex items-center hover:justify-center cursor-pointer hover:px-10 hover:py-5 ease-in-out duration-500 ">
                 <h1>Get Started</h1>
             </div>
