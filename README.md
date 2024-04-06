@@ -3,8 +3,16 @@
 
 
 
-# Project Name
-Long Description about project. This project do that. This project is awesome...
+# MyHours
+MyHours is a sleek and efficient note-taking application designed to streamline your task management experience. Built on the Django framework, MyHoursoffers a user-friendly interface that makes organizing your tasks a breeze.
+
+Features
+
+Home Page: The heart of MyHours, the home page greets users with a clean and intuitive interface. 
+
+View Task Page: Need to review your tasks? The view task page provides a comprehensive list of all your notes, neatly categorized and displayed for easy reference, ensuring they never miss an important deadline.
+
+Add Task Page: Creating new tasks is effortless with MyHours's add task page. Simply input the task details, including title, description, due date, and time, and let MyHour handle the rest. Users can also assign tasks to specific categories for better organization.
 ## Team members
 1. [Marina Rose Shaju](https://github.com/marina2813)
 2. [Rohit Babu George](https://github.com/xrg360)
@@ -14,13 +22,15 @@ Long Description about project. This project do that. This project is awesome...
 1. Explaining the working of project
 2. Embed video of project demo
 ## Libraries used
-Library Name - Version
+Django
+Tailwind
+
 ## How to configure
 To configure the project, follow these steps:
 
 1. Clone the repository:
     ```
-    git clone https://github.com/your-username/your-repo.git
+    git clone [https://github.com/your-username/your-repo.git](https://github.com/Marina2813/Sentinels)
     ```
 
 2. Navigate to the project directory:
