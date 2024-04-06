@@ -6,7 +6,10 @@ def home(request):
 def viewtasks(request):
     planners = Planner.objects.all()
     context = {'planners': planners}
-    return render(request, 'plannerDisplay.html', context)
+    todo_tasks = Planner.objects.filter(status='todo')
+    inprogress_tasks = Planner.objects.filter(status='inprogress')
+    completed_tasks = Planner.objects.filter(status='complete')
+    return render(request, 'plannerDisplay.html', {'context':context, 'todo_tasks': todo_tasks, 'inprogress_tasks':inprogress_tasks, 'completed_tasks': completed_tasks})
 
 
 def addtask(request):
