@@ -1,21 +1,28 @@
 {% extends "index.html" %}
-
+{% load static %}
 {% block title %}Planner Display{% endblock %}
 
 {% block content %}
+
+
 <div>
-    <h1 class="w-full text-center font-bold text-3xl py-5">Notes</h1>
-    <ul class="flex justify-evenly items-center">
+    <h1 class="text-3xl font-bold py-4">My Tasks</h1>
+
+    <div class="task-container">
+        <h2 class="text-xl font-bold">Tasks</h2>
         {% for planner in planners %}
-        <li class="px-10">
-            <strong>Title:</strong> {{ planner.title }}<br>
-            <strong>Description:</strong> {{ planner.description }}<br>
-            <strong>Date:</strong> {{ planner.date }}<br>
-            <strong>Time:</strong> {{ planner.time }}<br>
-            <strong>Created At:</strong> {{ planner.created_at }}<br>
-            <strong>Updated At:</strong> {{ planner.updated_at }}<br>
-        </li>
+        <div class="flex items-center bg-white p-4 rounded-md shadow-md mb-4">
+            <input type="checkbox" class="mr-4">
+            <div class="flex justify-between w-full">
+                <div class="font-bold">{{ planner.title }}</div>
+                <div class="text-sm text-gray-500">{{ planner.date }}</div>
+            </div>
+        </div>
         {% endfor %}
-    </ul>
+    </div>
+    <div class="task-container">
+        <h2 class="text-xl font-bold">Complete</h2>
+        <!-- Add completed tasks here -->
+    </div>
 </div>
 {% endblock %}
