@@ -26,11 +26,10 @@ Features
 - Changing Task Status: MyHours empowers users to track the progress of their tasks by allowing them to change the status from "To Do" to "Complete" once a task is finished. This functionality provides users with   a sense of accomplishment and helps them stay organized by marking completed tasks appropriately.
 
 ## Team members
-1. [![Marina Rose Shaju](https://github.com/marina2813.png?size=100)](https://github.com/marina2813)  
-   Marina Rose Shaju
+| [![Marina Rose Shaju](https://github.com/marina2813.png?size=100)](https://github.com/marina2813) | [![Rohit Babu George](https://github.com/xrg360.png?size=100)](https://github.com/xrg360) |
+|---|---|
+| Marina Rose Shaju | Rohit Babu George |
 
-2. [![Rohit Babu George](https://github.com/xrg360.png?size=100)](https://github.com/xrg360)  
-   Rohit Babu George
 
 ## Link to product walkthrough
 [link to video](Link Here)
