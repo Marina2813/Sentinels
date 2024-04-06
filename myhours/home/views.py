@@ -15,6 +15,13 @@ def addtask(request):
         description = request.POST['description']
         date = request.POST['date']
         time = request.POST['time']
-        Planner.objects.create(title=title, description=description, date=date, time=time)
+        status = request.POST['status']
+        Planner.objects.create(title=title, description=description, status=status, date=date, time=time)
         return render(request, 'index.html')
     return render(request, 'addTask.html')
+
+def login(request):
+    return render(request, 'login.html')
+def signup(request):
+    
+    return render(request, 'signup.html')

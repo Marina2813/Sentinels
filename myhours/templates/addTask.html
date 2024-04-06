@@ -3,19 +3,37 @@
 {% block title %}Add Task{% endblock %}
 
 {% block content %}
-<div>
-    <h1>Add Task</h1>
-    <form method="POST">
+<div class="flex flex-col justify-center items-center h-full pb-10 w-screen">
+    <h1 class="font-bold text-3xl">Add Task</h1>
+    <form method="POST" class="bg-white w-1/2 shadow-md rounded px-8 pt-6 pb-8 mb-4">
         {% csrf_token %}
-        <label for="title">Title:</label><br>
-        <input type="text" id="title" name="title"><br>
-        <label for="description">Description:</label><br>
-        <textarea id="description" name="description"></textarea><br>
-        <label for="date">Date:</label><br>
-        <input type="date" id="date" name="date"><br>
-        <label for="time">Time:</label><br>
-        <input type="time" id="time" name="time"><br>
-        <input type="submit" value="Submit">
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="title">Title:</label>
+            <input required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" id="title" name="title">
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="description">Description:</label>
+            <textarea required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="description" name="description"></textarea>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="status">Status:</label>
+            <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="status" name="status">
+                <option value="todo">Todo</option>
+                <option value="inprogress">In Progress</option>
+                <option value="complete">Complete</option>
+            </select>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="date">Date:</label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="date" id="date" name="date">
+        </div>
+        <div class="mb-6">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="time">Time:</label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="time" id="time" name="time">
+        </div>
+        <div class="flex items-center justify-between">
+            <input class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" value="Submit">
+        </div>
     </form>
 </div>
 {% endblock %}
