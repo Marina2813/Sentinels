@@ -66,26 +66,21 @@ To configure the project, follow these steps:
       source env/bin/activate
       ```
 
-5. Install the required dependencies:
-    ```
-    pip install -r requirements.txt
-    ```
-
-6. Set up the database:
+5. Set up the database:
     ```
     python manage.py migrate
     ```
 
-7. Create a superuser:
+6. Create a superuser:
     ```
     python manage.py createsuperuser
     ```
 
-8. Start the development server:
+7. Start the development server:
     ```
     python manage.py runserver
     ```
 
-9. Open your web browser and visit `http://localhost:8000` to see the project running.
+8. Open your web browser and visit `http://localhost:8000` and plan you day!!!!
 
 Note: Make sure you have Python and pip installed on your system before proceeding with the above steps.
